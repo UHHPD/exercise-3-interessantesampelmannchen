@@ -53,7 +53,8 @@ int main() {
     fout3.close();
     fout4.close();
 
+    int dof = 233;
     std::cout << "The negative log likelihood ration for mu=3.11538 is " << -2* log(lambda(daten, 3.11538)) << std::endl;
-    std::cout << "z = " << (-2* log(lambda(daten, 3.11538)) - 233)/sqrt(2*233) << std::endl;
+    std::cout << "z = " << (-2* log(lambda(daten, 3.11538)) - dof)/sqrt(2*dof) << std::endl;
 
 }
